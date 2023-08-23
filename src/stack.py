@@ -44,4 +44,3 @@ class Stack:
             self.top = self.stack[-1]
 
         return data_remote.data
-
