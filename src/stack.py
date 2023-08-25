@@ -10,6 +10,10 @@ class Node:
         self.data = data
         self.next_node = next_node
 
+    def __str__(self):
+        return (f"{self.data}\n"
+                f"{self.next_node}")
+
 
 class Stack:
     """Класс для стека"""
@@ -44,3 +48,7 @@ class Stack:
             self.top = self.stack[-1]
 
         return data_remote.data
+
+    def __str__(self):
+        return (f"{self.stack}\n"
+                f"{self.top}\n")
